@@ -475,7 +475,7 @@ main {
     text-align: initial;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .about-us {
     height: 2900px;
     margin: 20px 0 50px 0;
