@@ -53,7 +53,7 @@
     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 770px){
     .testimonials{    
         @include flex (column, center, center);    
         height: 700px;

@@ -48,28 +48,23 @@
         }
     }
     
-}
-@media (max-width: 1000px){
-    .choose-us{
-    .choose-us-header{
-        width:90%;
-    }
-    .choose-us-cards-container{
-    @include flex (column, center, center);
-    margin-top: 10px;
 
-    }
-}
 }
 @media (max-width: 1000px){
     .choose-us{
     height: 1800px;
     .choose-us-header{
+        width:90%;
         margin-top: -100px;
         p{
             margin: 0 0 20px 0;
         }
     }
+    .choose-us-cards-container{
+        @include flex (column, center, center);
+        margin-top: 10px;
+    
+        }
     .choose-us-info{
         margin: 10px 0 50px 0;
         width: 90%;
@@ -83,7 +78,7 @@
     }
 
 }
-@media (max-width: 360px){
+@media (max-width: 770px){
     .choose-us{
     height: 1700px;
     .choose-us-header{

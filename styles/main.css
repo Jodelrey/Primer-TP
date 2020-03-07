@@ -93,7 +93,7 @@ header .nav-list .responsive-bar a {
     display: none;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   header {
     height: 50px;
     width: 100%;
@@ -279,7 +279,7 @@ main {
     font-size: 30px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   .home {
     padding-top: 20px;
     width: 100%;
@@ -574,7 +574,7 @@ main {
     width: 90%;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   .services {
     padding: 0;
     height: 2450px;
@@ -657,8 +657,15 @@ main {
 }
 
 @media (max-width: 1000px) {
+  .choose-us {
+    height: 1800px;
+  }
   .choose-us .choose-us-header {
     width: 90%;
+    margin-top: -100px;
+  }
+  .choose-us .choose-us-header p {
+    margin: 0 0 20px 0;
   }
   .choose-us .choose-us-cards-container {
     display: flex;
@@ -666,17 +673,6 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-  }
-}
-@media (max-width: 1000px) {
-  .choose-us {
-    height: 1800px;
-  }
-  .choose-us .choose-us-header {
-    margin-top: -100px;
-  }
-  .choose-us .choose-us-header p {
-    margin: 0 0 20px 0;
   }
   .choose-us .choose-us-info {
     margin: 10px 0 50px 0;
@@ -687,7 +683,7 @@ main {
     width: 40%;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   .choose-us {
     height: 1700px;
   }
@@ -805,7 +801,7 @@ main {
     width: 600px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 770px) {
   .our-portfolio {
     width: 100%;
   }
@@ -908,7 +904,7 @@ main {
   font-style: italic;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   .testimonials {
     display: flex;
     flex-direction: column;
@@ -1055,7 +1051,7 @@ main {
     width: 80%;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   .team {
     height: 1600px;
     margin-top: -120px;
@@ -1146,7 +1142,7 @@ main {
     width: 100px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   .clients {
     height: 1800px;
   }
@@ -1324,15 +1320,7 @@ main {
     margin: 10px 0;
   }
 }
-@media (max-width: 700px) {
-  .contact-us .contact-us-container .contact-us-info .contact-us-form .contact-us-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   .contact-us {
     height: 1300px;
   }
@@ -1531,7 +1519,7 @@ footer .rights-container .copyright p, footer .rights-container .credits p {
     width: 45%;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   footer {
     height: 1800px;
   }
@@ -1566,7 +1554,7 @@ footer .rights-container .copyright p, footer .rights-container .credits p {
   right: 15px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 770px) {
   .back-to-top {
     display: none;
   }
