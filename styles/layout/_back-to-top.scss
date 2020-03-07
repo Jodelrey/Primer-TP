@@ -1,0 +1,19 @@
+.back-to-top{
+    background: #007bff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 1;
+    font-size: 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+@media (max-width:360px){
+    .back-to-top{
+        display: none;
+    }
+}

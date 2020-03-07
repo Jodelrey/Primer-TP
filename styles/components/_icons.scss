@@ -1,0 +1,192 @@
+//Menu icons
+
+.aside-icon, .aside-icon-second-dropdown {       
+    
+    &::after {
+    content:"\f078";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    margin-left: 5px
+    }
+} 
+
+.first-dropdown::after{
+    content:"\f078";
+    font-family: "Font Awesome 5 Free"; 
+    font-size: 10px;
+    font-weight: 900;
+    padding:0;
+    margin-left: -10px;
+    color: $nav-color;
+
+}
+
+.second-dropdown::after{
+    content:"\f054";
+    font-family: "Font Awesome 5 Free"; 
+    font-size: 10px;
+    font-weight: 900;
+    padding-left: 10px;
+    color: $nav-color;
+
+}
+
+#aside-dropdown:checked ~.aside-icon::after{
+    content:"\f077";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+}
+
+#second-dropdown-aside:checked ~.aside-icon-second-dropdown::after{
+    content:"\f077";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+}
+
+//About-us icons
+.about-us-icon{
+    @include flex(column, center, center);
+    width: 64px;
+    height: 64px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    text-align: center;
+    color: #007bff;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: white;
+        background-color:  #007bff ;
+
+
+    }
+}
+
+//Services icons
+.services{
+.services-card-icon{
+    position: absolute;
+    font-size: 64px;
+    top: calc(50% - 32px);
+    left: -10px;
+
+}
+.fas.fa-chart-pie {
+    color: #ff689b;
+}
+
+.fas.fa-book-open {
+    color: #e9bf06;
+}
+
+.far.fa-file-alt {
+    color: #3fcdc7;
+}
+
+.fas.fa-tachometer-alt {
+    color: #41cf2e;
+}
+
+.fas.fa-globe {
+    color: #d6ff22;
+}
+
+.far.fa-clock {
+    color: #4680ff;
+   
+}
+}
+
+// Choose-us-icons
+
+
+.choose-us-card{
+    i.choose-us-icon{
+        font-size: 48px;
+        color: #bfddfe;
+        padding-top: 15px; 
+
+    }
+}
+
+
+//Portfolio icons
+
+.portfolio-card-links{
+    @include flex(row, center, center);
+    width: 100%;
+    a.link-card{
+        @include flex(row, center, center);
+        width: 30px;
+        padding: 5px;
+        height: 30px;
+        margin: 0 10px 0 10px;
+        cursor: pointer;
+        background: #007bff;
+        border-radius: 50%;
+        &:hover{
+            background: #17a2b8;
+            
+            }
+        }
+    .fa-eye, .fa-external-link-alt{
+            color: white;
+            font-size: 15px;
+            
+        
+    }
+    
+}
+
+
+//Team Icons
+
+.social{
+    .fa-twitter, .fa-facebook-f, .fa-google-plus-g, .fa-linkedin-in{
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+
+//Contact Us Icons
+
+.fa-map-marker-alt, .fa-envelope, .fa-phone-alt{
+    color: #007bff;
+    font-size: 28px;
+}
+
+//Footer icons
+
+.social-links{
+    @include flex(row, space-between, center);
+    a{
+        font-size: 18px;
+        background: #007bff;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            background: #0067d5;
+        }
+    .fa-twitter, .fa-facebook-f, .fa-instagram, .fa-linkedin-in, .fa-google-plus-g{
+        color: #fff;
+        margin-top: calc(50% - 9px);   
+        
+    }
+
+}
+}
+
+//Back-to-top icon
+
+.back-to-top{
+    .fa-chevron-up{
+        color: #fff;
+        text-align: center;        
+        margin-top: calc(50% - 10px);
+    }
+}

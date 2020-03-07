@@ -1,0 +1,30 @@
+.nav-list-dropdown{
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    transform: translateY(30px);
+    background-color: white;
+    width: 150px;
+    box-shadow: $box-shadow-nav;
+   
+    li{
+        margin: 20px 20px 20px -32px;
+    }
+     
+    
+}
+
+.nav-list-last{
+    position: absolute;
+    top: -7px;
+    left: 182px;
+    background-color: white;
+    width: 180px;
+    box-shadow: $box-shadow-nav;
+    transform: translateX(-20px);
+    visibility: hidden;
+    li{
+        margin: 20px 0px 20px -38px;
+    }
+}
+
