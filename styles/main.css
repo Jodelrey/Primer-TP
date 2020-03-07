@@ -488,8 +488,9 @@ main {
     align-items: center;
   }
   .about-us .about-us-info {
+    padding-top: 30px;
     margin-bottom: 200px;
-    width: 90%;
+    width: 100%;
   }
   .about-us .about-us-container .about-us-sections .about-us-submenu {
     display: flex;
@@ -910,11 +911,11 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 700px;
     width: 100%;
   }
   .testimonials .header-testimonials {
-    margin-top: 40px;
+    margin-top: -20px;
     width: 100%;
   }
   .testimonials .testimonials-container {
@@ -1144,7 +1145,7 @@ main {
 }
 @media (max-width: 360px) {
   .clients {
-    height: 1600px;
+    height: 1800px;
   }
   .clients .clients-header {
     margin-top: 0;

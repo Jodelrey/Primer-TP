@@ -147,13 +147,13 @@
         height: 2900px;
         margin: 20px 0 50px 0;
         width: 100%;
-        text-align: center;
-       
+        text-align: center;       
         padding-top: 30px;
         @include flex(column, center, center);
-        .about-us-info{        
+        .about-us-info{  
+            padding-top: 30px;      
             margin-bottom: 200px;
-            width: 90%;
+            width: 100%;
             }
     
         .about-us-container{

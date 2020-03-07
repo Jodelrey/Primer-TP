@@ -56,10 +56,10 @@
 @media (max-width: 360px){
     .testimonials{    
         @include flex (column, center, center);    
-        height: 500px;
+        height: 700px;
         width: 100%;
     .header-testimonials{  
-        margin-top: 40px;
+        margin-top: -20px;
         width: 100%;
      }
     .testimonials-container{        
