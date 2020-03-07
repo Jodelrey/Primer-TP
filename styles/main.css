@@ -107,8 +107,8 @@ header .nav-list .responsive-bar a {
     width: 40px;
   }
   header nav .nav-list li.responsive-bar .icon-nav {
-    font-size: 15px;
-    margin-right: 40px;
+    font-size: 20px;
+    margin-right: 50px;
     padding: 0;
     display: block;
   }
@@ -1688,6 +1688,7 @@ button {
   border: none;
   color: white;
   background-color: #007bff;
+  transition: 0.3s ease-in-out;
 }
 .send:hover {
   background-color: #004a99;
