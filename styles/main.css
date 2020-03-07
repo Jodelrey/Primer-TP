@@ -492,6 +492,9 @@ main {
     margin-bottom: 200px;
     width: 100%;
   }
+  .about-us .about-us-info h2 {
+    margin-top: 20px;
+  }
   .about-us .about-us-container .about-us-sections .about-us-submenu {
     display: flex;
     flex-direction: row;
