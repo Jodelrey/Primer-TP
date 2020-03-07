@@ -1521,7 +1521,7 @@ footer .rights-container .copyright p, footer .rights-container .credits p {
 }
 @media (max-width: 770px) {
   footer {
-    height: 1800px;
+    height: 1600px;
   }
   footer .footer-top {
     width: 100%;
