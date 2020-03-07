@@ -1162,8 +1162,8 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  margin-bottom: 30px;
+  height: 700px;
+  padding-bottom: 40px;
   background: #fff;
 }
 .contact-us-container .contact-us-header h2 {
@@ -1175,7 +1175,7 @@ main {
   margin: 0 0 20px 0;
   padding: 0;
   letter-spacing: 1px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .contact-us-container .contact-us-info {
   font-family: "Open Sans", sans-serif;
