@@ -1,6 +1,9 @@
 body{
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     @include flex(row, space-around, center);
     height: 80px;

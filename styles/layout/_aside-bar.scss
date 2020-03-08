@@ -16,7 +16,12 @@
         transform: translateX(-300px);
         transition: 0.5s;
         z-index: 10000;
-    &:target {
+        
+    }
+
+ 
+#aside-target:target #aside-bar{
+    
         display: block;
         height: 100%;
         transform: translateX(0);
@@ -37,15 +42,10 @@
             
         }
 
-        
-    }
-
-    
-    }
-
- 
-
-
+}
+#aside-target:target .fa-bars{
+    display: none;
+}
 
 ul.aside-dropdown-list, ul.aside-deeper-dropdown-list{
     display: none;
