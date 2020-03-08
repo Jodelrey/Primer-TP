@@ -1,88 +1,77 @@
-
-.choose-us{
-    @include flex(column, center, center);
+.choose-us {
+    @include flex(column,center,center);
     background-color: $background-blue;
     padding: 60px 0;
     width: 100%;
-    .choose-us-header{
+    .choose-us-header {
         color: white;
         width: 40%;
         text-align: center;
-        h2.choose-us-title{
+        h2.choose-us-title {
             @include titles();
             color: white;
         }
-        p{
+        p {
             @include subtitles();
             color: white;
         }
     }
-    
-    .choose-us-cards-container{
-        @include flex(space-around, center);
+    .choose-us-cards-container {
+        @include flex(space-around,center);
         flex-wrap: wrap;
         width: 100%;
         margin: 30px 0 30px;
-        
-        }
-    .choose-us-info{
-        @include flex(row, space-around, center);
+    }
+    .choose-us-info {
+        @include flex(row,space-around,center);
         width: 80%;
         margin-top: 50px;
-        .choose-us-details{
+        .choose-us-details {
             text-align: center;
-            .statistics{
+            .statistics {
                 font-family: $font-titles;
                 font-size: 48px;
                 font-weight: bold;
-                color:#fff;
+                color: #fff;
             }
-            p{
+            p {
                 color: #cce5ff;
                 font-family: $font-titles;
                 font-size: 16px;
                 margin: 0 0 20px 0;
-                
-
             }
         }
     }
-    
-
 }
-@media (max-width: 1000px){
-    .choose-us{
-    height: 1800px;
-    .choose-us-header{
-        width:90%;
-        margin-top: -100px;
-        p{
-            margin: 0 0 20px 0;
+@media (max-width:1000px) {
+    .choose-us {
+        height: 1800px;
+        .choose-us-header {
+            width: 90%;
+            margin-top: -100px;
+            p {
+                margin: 0 0 20px 0;
+            }
+        }
+        .choose-us-cards-container {
+            @include flex (column,center,center);
+            margin-top: 10px;
+        }
+        .choose-us-info {
+            margin: 10px 0 50px 0;
+            width: 90%;
+            flex-wrap: wrap;
+            .choose-us-details {
+                width: 40%;
+            }
         }
     }
-    .choose-us-cards-container{
-        @include flex (column, center, center);
-        margin-top: 10px;
-    
-        }
-    .choose-us-info{
-        margin: 10px 0 50px 0;
-        width: 90%;
-        flex-wrap: wrap;
-        .choose-us-details{
-            width: 40%;
-        }
-       
-    }
-    
-    }
-
 }
-@media (max-width: 770px){
-    .choose-us{
-    height: 1700px;
-    .choose-us-header{
-        margin-top: 30px;
+@media (max-width:770px) {
+    .choose-us {
+        height: 1700px;
+        .choose-us-header {
+            margin-top: 30px;
+        }
     }
-}
 }

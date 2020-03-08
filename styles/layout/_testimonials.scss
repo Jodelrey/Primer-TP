@@ -1,77 +1,70 @@
-.testimonials{
-    @include flex(column, center, center);
+.testimonials {
+    @include flex(column,center,center);
     width: 100%;
     height: 100%;
     background: $background-light;
-    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-    .header-testimonials{        
+    box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.1);
+    .header-testimonials {
         @include titles();
     }
-    .testimonials-container{        
+    .testimonials-container {
         width: 60%;
         height: 400px;
         scroll-snap-type: x mandatory;
         overflow-x: scroll;
         display: grid;
-        grid-template-columns: repeat(5, 100%);
-        .testimonials-cases{
+        grid-template-columns: repeat(5,100%);
+        .testimonials-cases {
             width: 100%;
             scroll-snap-align: start;
-            @include flex (row, center, center);
-            img{
+            @include flex (row,center,center);
+            img {
                 width: 120px;
                 border-radius: 50%;
             }
-            .testimonials-info{
-                @include flex(column, center, start);
+            .testimonials-info {
+                @include flex(column,center,start);
                 margin-left: 30px;
-            h4{
-                font-family: $font-titles;
-                font-size: 20px;
-                font-weight: bold;
-                margin: 10px 0 5px 0;
-                color: #111;
-                
+                h4 {
+                    font-family: $font-titles;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 10px 0 5px 0;
+                    color: #111;
+                }
+                h5 {
+                    font-family: $font-titles;
+                    font-size: 14px;
+                    color: #999;
+                    margin: 0 0 15px 0;
+                }
+                p {
+                    font-family: $font-paragraph;
+                    color: #444;
+                    font-size: 14px;
+                    font-style: italic;
+                }
             }
-            h5{
-                font-family: $font-titles;
-                font-size: 14px;
-                color: #999;
-                margin: 0 0 15px 0;
-                
-            }
-            p{
-                font-family: $font-paragraph;
-                color: #444;
-                font-size: 14px;
-                font-style: italic;
-            }
-        }
-
-
         }
     }
 }
-
-@media (max-width: 770px){
-    .testimonials{    
-        @include flex (column, center, center);    
+@media (max-width:770px) {
+    .testimonials {
+        @include flex (column,center,center);
         height: 700px;
         width: 100%;
-    .header-testimonials{  
-        margin-top: -20px;
-        width: 100%;
-     }
-    .testimonials-container{        
-        width: 100%;
-        margin-top: -80px;
-        
-        .testimonials-cases{
-            @include flex (column, center, center);
+        .header-testimonials {
+            margin-top: -20px;
             width: 100%;
-            scroll-snap-align: start;          
-            
+        }
+        .testimonials-container {
+            width: 100%;
+            margin-top: -80px;
+            .testimonials-cases {
+                @include flex (column,center,center);
+                width: 100%;
+                scroll-snap-align: start;
+            }
+        }
     }
-}
-}
 }

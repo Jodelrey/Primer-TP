@@ -1,82 +1,62 @@
 
       
-    .close{        
-        position: fixed;        
+    .close {
+        position: fixed;
         top: 20px;
-        right: 30px;     
+        right: 30px;
         z-index: 10000;
-       
     }
-       
-    #aside-bar{  
+    #aside-bar {
         position: fixed;
         top: 0;
-        left: 0;     
+        left: 0;
         height: 100%;
         transform: translateX(-300px);
         transition: 0.5s;
         z-index: 10000;
-        
     }
-
- 
-#aside-target:target #aside-bar{
-    
+    #aside-target:target #aside-bar {
         display: block;
         height: 100%;
         transform: translateX(0);
         transition: 0.3s;
         z-index: 9900;
-      
         & + .background-body {
             display: block;
             position: fixed;
             height: 100%;
             width: 100%;
-            background-color: rgba(19, 39, 57, 0.8);
+            background-color: rgba(19,39,57,0.8);
             top: 0;
             left: 0;
             cursor: default;
             overflow: hidden;
             z-index: 9800;
-            
         }
-
-}
-#aside-target:target .fa-bars{
-    display: none;
-}
-
-ul.aside-dropdown-list, ul.aside-deeper-dropdown-list{
-    display: none;
-    transition: 0.5s;
-    
-}
-
-
-#aside-dropdown{
-    display: none;
-    &:checked ~.aside-dropdown-list{
-        display: block;
-}
-    
-
-}
-
-
-#second-dropdown-aside{
-    display: none;
-    &:checked ~.aside-deeper-dropdown-list{
-        display: block;
+    }
+    #aside-target:target .fa-bars {
+        display: none;
+    }
+    ul.aside-dropdown-list, ul.aside-deeper-dropdown-list {
+        display: none;
+        transition: 0.5s;
+    }
+    #aside-dropdown {
+        display: none;
+        &:checked ~.aside-dropdown-list {
+            display: block;
+        }
+    }
+    #second-dropdown-aside {
+        display: none;
+        &:checked ~.aside-deeper-dropdown-list {
+            display: block;
+        }
+    }
+    .background-body {
+        display: none;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
     
-}
-
-.background-body{
-    display: none;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    
-}
-

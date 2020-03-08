@@ -1,8 +1,8 @@
-main{
+main {
     width: 100%;
 }
-.home{
-    @include flex(center, center);    
+.home {
+    @include flex(center,center);
     background-color: $background-blue;
     background-size: cover;
     background-repeat: repeat;
@@ -10,16 +10,15 @@ main{
     width: 100%;
     height: 100vh;
     margin-top: 20px;
-    
-    .home-container{
-        @include flex(row, space-between, center);
+    .home-container {
+        @include flex(row,space-between,center);
         width: 90%;
         margin-bottom: 20px;
-        .intro-text{
+        .intro-text {
             width: 50%;
-            @include flex(column, space-evenly, flex-start);
+            @include flex(column,space-evenly,flex-start);
             height: 300px;
-            h2.home-info{
+            h2.home-info {
                 color: #fff;
                 font-family: $font-titles;
                 font-size: 48px;
@@ -27,88 +26,82 @@ main{
                 margin-bottom: 40px;
                 padding: 0;
                 margin: 0 0 20px 0;
-                span{
+                span {
                     color: #74b5fc;
                     text-decoration: underline;
                 }
             }
-          
-
         }
-        .home-img{
+        .home-img {
             width: 650px;
         }
     }
-    
 }
-    
-@media (max-width: 1100px){
-    .home{
+@media (max-width:1100px) {
+    .home {
         width: 100%;
         padding-top: 100px;
-    .home-container{
-        width: 90%;
-        @include flex(column, center, center);    
-    .intro-text{  
-        @include flex(column, center, center); 
-        width: 100%;              
-        order: 2;
-        text-align: center;
-        h2{
-            line-height: 60px;
+        .home-container {
+            width: 90%;
+            @include flex(column,center,center);
+            .intro-text {
+                @include flex(column,center,center);
+                width: 100%;
+                order: 2;
+                text-align: center;
+                h2 {
+                    line-height: 60px;
+                }
+            }
+            .home-img {
+                width: 80%;
+                order: 1;
+            }
         }
-
-    }
-    .home-img{
-        width: 80%;
-        order:1;
-    }
     }
 }
-}
-@media (max-width: 436px){
-    .home{
+@media (max-width:436px) {
+    .home {
         width: 100%;
         padding-top: 100px;
-    .home-container{        
-        @include flex(column, center, center);    
-    
-    .intro-text{             
-        @include flex(column, center, center); 
-        h2.home-info{
-            line-height: 40px;
-            font-size: 30px;
-        } 
+        .home-container {
+            @include flex(column,center,center);
+            .intro-text {
+                @include flex(column,center,center);
+                h2.home-info {
+                    line-height: 40px;
+                    font-size: 30px;
+                }
+            }
+        }
     }
 }
-}
-}
-@media (max-width: 770px){
-    .home{
+@media (max-width:770px) {
+    .home {
         padding-top: 20px;
         width: 100%;
         margin: 50px 0 110px 0;
         height: 600px;
-    .home-container{
-        @include flex(column, center, center);    
-        width: 100%;
-    .intro-text{ 
-        @include flex(column, center, center);    
-        margin-top: 30px;
-        width: 80%;               
-        order: 2;
-        text-align: center;
-        h2.home-info{
-            line-height: 40px;
-            font-size: 30px;
+        .home-container {
+            @include flex(column,center,center);
+            width: 100%;
+            .intro-text {
+                @include flex(column,center,center);
+                margin-top: 30px;
+                width: 80%;
+                order: 2;
+                text-align: center;
+                h2.home-info {
+                    line-height: 40px;
+                    font-size: 30px;
+                }
+                .home-buttons {
+                    @include flex(column,center,center);
+                }
+            }
+            .home-img {
+                width: 80%;
+            }
         }
-        .home-buttons{
-            @include flex(column, center, center); 
-        }
     }
-    .home-img{       
-        width: 80%;
-    }
-    }
-}
 }

@@ -1,51 +1,46 @@
 
-.services{
-    @include flex(column, center, center);
+.services {
+    @include flex(column,center,center);
     background: #ecf5ff;
     height: 100%;
     width: 100%;
-    
     padding: 80px 0;
-    .services-intro{
+    .services-intro {
         width: 40%;
         text-align: center;
-        h2.services-title{
+        h2.services-title {
             @include titles();
         }
-        p.services-description{
-           @include subtitles();
-               
+        p.services-description {
+            @include subtitles();
         }
     }
     .cards-container {
-        @include flex(row, space-between, center);
+        @include flex(row,space-between,center);
         flex-wrap: wrap;
-        width: 70%;  
+        width: 70%;
     }
-    
 }
-
-@media(max-width: 1100px) {
-    .services{
-        .services-intro{
+@media(max-width:1100px) {
+    .services {
+        .services-intro {
             width: 80%;
-        } 
-    .cards-container{
-    @include flex(column, center, center);
-    width: 90%;
- }
-}
-}
-
-@media(max-width: 770px) {
-    .services{
-    padding: 0;
-    height: 2450px;  
-    margin: 20px 0 0 0;   
-    .cards-container{
-    @include flex(column, center, center);
-    max-width: 100%;
-    margin: 0 0 50px 0;
+        }
+        .cards-container {
+            @include flex(column,center,center);
+            width: 90%;
+        }
     }
 }
-} 
+@media(max-width:770px) {
+    .services {
+        padding: 0;
+        height: 2450px;
+        margin: 20px 0 0 0;
+        .cards-container {
+            @include flex(column,center,center);
+            max-width: 100%;
+            margin: 0 0 50px 0;
+        }
+    }
+}

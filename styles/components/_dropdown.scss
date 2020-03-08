@@ -1,4 +1,4 @@
-.nav-list-dropdown{
+.nav-list-dropdown {
     visibility: hidden;
     position: absolute;
     top: 30px;
@@ -6,15 +6,11 @@
     background-color: white;
     width: 150px;
     box-shadow: $box-shadow-nav;
-   
-    li{
+    li {
         margin: 20px 20px 20px -32px;
     }
-     
-    
 }
-
-.nav-list-last{
+.nav-list-last {
     position: absolute;
     top: -7px;
     left: 176px;
@@ -23,8 +19,7 @@
     box-shadow: $box-shadow-nav;
     transform: translateX(-20px);
     visibility: hidden;
-    li{
+    li {
         margin: 20px 0px 20px -38px;
     }
 }
-

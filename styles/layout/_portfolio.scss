@@ -1,21 +1,20 @@
-.our-portfolio{
+.our-portfolio {
     padding-top: 50px;
     background: #fff;
-    .portfolio-container{
-        @include flex(column, center, center);
+    .portfolio-container {
+        @include flex(column,center,center);
         width: 100%;
-    .portfolio-header{
-        h3{
-            @include titles();
-            margin-top: 30px;
-
+        .portfolio-header {
+            h3 {
+                @include titles();
+                margin-top: 30px;
+            }
         }
-    }
-    ul.portfolio-filter-options{      
-            @include flex (row, space-around, center);
+        ul.portfolio-filter-options {
+            @include flex (row,space-around,center);
             width: 20%;
             list-style: none;
-            li{ 
+            li {
                 font-family: $font-paragraph;
                 font-size: 16px;
                 line-height: 24px;
@@ -29,98 +28,86 @@
                 text-transform: uppercase;
                 margin-bottom: 5px;
                 transition: 0.3s ease-in-out;
-                &:hover{
-                background: #007bff;
-                color: #fff;
+                &:hover {
+                    background: #007bff;
+                    color: #fff;
                 }
             }
-            li.filter-active{
+            li.filter-active {
                 background: #007bff;
                 color: #fff;
-
             }
-    }
-    .portfolio-cards-container{
-        @include flex(row, center, center);
-        flex-wrap: wrap;
-        width: 95%;
-        
-
+        }
+        .portfolio-cards-container {
+            @include flex(row,center,center);
+            flex-wrap: wrap;
+            width: 95%;
+        }
     }
 }
-}
-
-@media (max-width: 1000px){
-    .portfolio-cards-container{
-        @include flex(column, center, center);
+@media (max-width:1000px) {
+    .portfolio-cards-container {
+        @include flex(column,center,center);
         width: 90%;
-      
-        .portfolio-card{
+        .portfolio-card {
             width: 700px;
-            .img-portfolio-container{
+            .img-portfolio-container {
                 width: 700px;
-                img{
+                img {
                     object-fit: cover;
                 }
             }
-        .portfolio-card-info, .card-hover-background{
-            width: 700px;
+            .portfolio-card-info, .card-hover-background {
+                width: 700px;
+            }
         }
-            
-        }
-}
-}
-
-@media (max-width: 800px){
-    .portfolio-container{
-        
-        width: 100%;
-    ul.portfolio-filter-options{
-        @include flex (row, space-evenly, center);
     }
-    .portfolio-cards-container{
-        @include flex(column, center, center);
-        width: 90%;
-        .portfolio-card{
-            width: 600px;
-            .img-portfolio-container{
+}
+@media (max-width:800px) {
+    .portfolio-container {
+        width: 100%;
+        ul.portfolio-filter-options {
+            @include flex (row,space-evenly,center);
+        }
+        .portfolio-cards-container {
+            @include flex(column,center,center);
+            width: 90%;
+            .portfolio-card {
                 width: 600px;
-              
+                .img-portfolio-container {
+                    width: 600px;
+                }
+                .portfolio-card-info, .card-hover-background {
+                    width: 600px;
+                }
             }
-        .portfolio-card-info, .card-hover-background{
-            width: 600px;
         }
-            
-        }
-}
     }
 }
-@media (max-width: 770px){
-    .our-portfolio{
+@media (max-width:770px) {
+    .our-portfolio {
         width: 100%;
-        .portfolio-container{
-        @include flex(column, center, center);
-        ul.portfolio-filter-options{
-        @include flex (row, space-around, center);
-        li{
-            margin: 2px;
-        }
-    }
-    .portfolio-cards-container{
-        @include flex(column, center, center);
-        width: 90%;
-        .portfolio-card{
-            width: 300px;
-            .img-portfolio-container{
-                width: 300px;
-              
+        .portfolio-container {
+            @include flex(column,center,center);
+            ul.portfolio-filter-options {
+                @include flex (row,space-around,center);
+                li {
+                    margin: 2px;
+                }
             }
-        .portfolio-card-info, .card-hover-background{
-            width: 300px;
+            .portfolio-cards-container {
+                @include flex(column,center,center);
+                width: 90%;
+                .portfolio-card {
+                    width: 300px;
+                    .img-portfolio-container {
+                        width: 300px;
+                    }
+                    .portfolio-card-info, .card-hover-background {
+                        width: 300px;
+                    }
+                }
+            }
         }
-            
-        }
-}
     }
-}
 }

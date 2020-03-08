@@ -1,24 +1,23 @@
-footer{
-    @include flex(column, center, center);
-    
+footer {
+    @include flex(column,center,center);
     position: sticky;
     bottom: 0;
     left: 0;
     z-index: -1;
-    .footer-top{
-        @include flex(row, center, center);
+    .footer-top {
+        @include flex(row,center,center);
         background: $background-blue;
         width: 100%;
         height: 500px;
-        .footer-container{
-            @include flex(row, space-evenly, start); 
-            width: 80%;             
+        .footer-container {
+            @include flex(row,space-evenly,start);
+            width: 80%;
             flex-wrap: wrap;
-            .page-resume{
-                width: 310px; 
+            .page-resume {
+                width: 310px;
                 margin-right: 20px;
-                flex-grow: 1;               
-                h3{
+                flex-grow: 1;
+                h3 {
                     font-size: 34px;
                     margin: 20px 0 20px 0;
                     padding: 2px 0 2px 0;
@@ -28,7 +27,7 @@ footer{
                     font-weight: 400;
                     text-transform: uppercase;
                 }
-                p{
+                p {
                     font-size: 15px;
                     line-height: 26px;
                     margin: 0 0 30px 0;
@@ -37,74 +36,71 @@ footer{
                     padding: 0;
                 }
             }
-            .footer-links-container{
-                @include flex(column, space-evenly, flex-start);
+            .footer-links-container {
+                @include flex(column,space-evenly,flex-start);
                 width: 150px;
                 flex-grow: 1;
-                h4{
+                h4 {
                     @include footerTitles();
                 }
-                ul{
+                ul {
                     list-style: none;
                     padding: 0;
                     margin: 0;
-
                     li {
                         margin: 15px 0 15px 0;
-                        a{
-                        text-decoration: none;
-                        color: #ecf5ff;
-                        font-size: 16px;                        
-                        font-family: $font-paragraph;
-                        font-weight: 500;
-                        line-height: 1.5;
-                        margin: 0;
-                        transition: 0.3s ease-in-out;
-                        &:hover{
-                            color: $nav-color-hover;  
+                        a {
+                            text-decoration: none;
+                            color: #ecf5ff;
+                            font-size: 16px;
+                            font-family: $font-paragraph;
+                            font-weight: 500;
+                            line-height: 1.5;
+                            margin: 0;
+                            transition: 0.3s ease-in-out;
+                            &:hover {
+                                color: $nav-color-hover;
+                            }
                         }
                     }
                 }
-                }
             }
-            .footer-contact{
+            .footer-contact {
                 width: 200px;
                 margin-right: 20px;
                 flex-grow: 1;
-                h4{
+                h4 {
                     @include footerTitles();
                 }
-                p{
+                p {
                     font-family: $font-paragraph;
                     line-height: 26px;
                     font-size: 14px;
                     color: #eee;
-        
                 }
             }
-            .footer-newsletter{
+            .footer-newsletter {
                 width: 300px;
                 flex-grow: 1;
-                h4{
+                h4 {
                     @include footerTitles();
                 }
-                p{
+                p {
                     font-family: $font-paragraph;
                     line-height: 26px;
                     font-size: 16px;
                     color: #eee;
-        
                 }
-                .footer-subscribe{
-                    @include flex(row, center, center);
-                    input{
-                    line-height: 35px;
-                    margin: 0;
-                    width: 60%;
-                    border: 0;
-                    padding: 0;
+                .footer-subscribe {
+                    @include flex(row,center,center);
+                    input {
+                        line-height: 35px;
+                        margin: 0;
+                        width: 60%;
+                        border: 0;
+                        padding: 0;
                     }
-                    .button-subscribe{
+                    .button-subscribe {
                         line-height: 35px;
                         //height: ;
                         background: #007bff;
@@ -120,64 +116,56 @@ footer{
                 }
             }
         }
-        
     }
-    .rights-container{
+    .rights-container {
         width: 100%;
         height: 200px;
-        @include flex(column, center, center);
+        @include flex(column,center,center);
         background: $background-dark;
         margin: 0;
-        .copyright, .credits{
-            p{
-               font-family: $font-paragraph;
-               font-size: 16px;
-               color: #fff;
-               margin: 0;
-               padding:0;
+        .copyright, .credits {
+            p {
+                font-family: $font-paragraph;
+                font-size: 16px;
+                color: #fff;
+                margin: 0;
+                padding: 0;
             }
-
         }
-        
     }
 }
-
-@media (max-width: 1100px){
-    footer{
+@media (max-width:1100px) {
+    footer {
         height: 1500px;
         position: relative;
-        .footer-top{
+        .footer-top {
             width: 100%;
             height: 800px;
-            .footer-container{
+            .footer-container {
                 flex-wrap: wrap;
                 width: 90%;
-                .page-resume, .footer-links-container, .footer-newsletter, .footer-contact{
+                .page-resume, .footer-links-container, .footer-newsletter, .footer-contact {
                     width: 45%;
                 }
-                
             }
         }
     }
 }
-
-@media (max-width: 770px){
-    footer{
-        height:1400px;
-        .footer-top{
+@media (max-width:770px) {
+    footer {
+        height: 1400px;
+        .footer-top {
             width: 100%;
             height: 1200px;
-            .footer-container{
-                @include flex (column, center, center);
-                .page-resume, .footer-links-container, .footer-newsletter, .footer-contact{
+            .footer-container {
+                @include flex (column,center,center);
+                .page-resume, .footer-links-container, .footer-newsletter, .footer-contact {
                     width: 100%;
                 }
             }
         }
-        .rights-container{
-            
+        .rights-container {
             text-align: center;
         }
     }
-
 }

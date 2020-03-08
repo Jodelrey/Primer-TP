@@ -1,5 +1,5 @@
 .services-card {
-    @include flex(column, center, center);
+    @include flex(column,center,center);
     position: relative;
     background-color: white;
     width: 46%;
@@ -8,81 +8,66 @@
     box-sizing: border-box;
     margin: 0 10px 40px 10px;
     border-radius: 10px;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    box-shadow: 0 10px 29px 0 rgba(68,88,144,0.1);
     overflow: hidden;
     z-index: 500;
-    transition: 0.3s ease-in-out;    
+    transition: 0.3s ease-in-out;
     max-height: 200px;
-    
-
     &:hover {
         transform: translateY(-10px);
         transition: all ease-out 0.3s;
     }
-    .services-card-info {  
-        .card-title {            
+    .services-card-info {
+        .card-title {
             font-size: 20px;
             text-decoration: none;
             color: #000;
             font-family: $font-titles;
             padding: 50px 0 0 70px;
             font-weight: 600;
-        }    
+        }
         p {
             padding: 10px 0 0 70px;
             line-height: 25px;
             font-family: $font-paragraph;
-        }    
-    
+        }
     }
-
     &:hover a.card-title {
         color: #007bff;
-    
     }
 }
-
-
-
-
-@media(max-width: 1100px) {
-    .services-card{
-    width: 70%;
-    max-height: 190px;
-    max-width: 700px;
+@media(max-width:1100px) {
+    .services-card {
+        width: 70%;
+        max-height: 190px;
+        max-width: 700px;
     }
 }
-
-@media(max-width: 500px) {
-    .services-card{
-    max-width: 600px;    
-    max-height: 300px;
-    .services-card-info{
-    .card-title{
-        text-align:center;
-        font-size: 15px;
-        padding: 20px 0 20px 10px;
-        
-    }
-    p{
-        font-size: 12px
-    }
-    }
-}
-}
-
-
-@media(max-width: 360px) {
-    .services-card{       
-    max-width: 520px;
-    max-height: 500px;
-    margin: 20px 0;
+@media(max-width:500px) {
+    .services-card {
+        max-width: 600px;
+        max-height: 300px;
+        .services-card-info {
+            .card-title {
+                text-align: center;
+                font-size: 15px;
+                padding: 20px 0 20px 10px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
     }
 }
-
-
+@media(max-width:360px) {
+    .services-card {
+        max-width: 520px;
+        max-height: 500px;
+        margin: 20px 0;
+    }
+}
 //Choose us cards
-.choose-us-card{
+.choose-us-card {
     background: $background-dark;
     border-color: $background-dark;
     border-radius: 10px;
@@ -93,18 +78,18 @@
     transition: 0.3s ease-in-out;
     height: 320px;
     max-width: 21%;
-    h4{
+    h4 {
         font-family: $font-titles;
         font-size: 22px;
         margin: 20px 0 12px;
     }
-    p{
+    p {
         font-family: $font-paragraph;
         font-size: 18px;
         margin: 30px 0 30px;
         line-height: 25px;
     }
-    .choose-us-link{
+    .choose-us-link {
         font-family: $font-paragraph;
         font-size: 19px;
         letter-spacing: 1px;
@@ -114,67 +99,56 @@
         text-decoration: none;
         border-bottom: 2px solid #003b7a;
         transition: 0.3s ease-in-out;
-        &:hover{
+        &:hover {
             border-bottom: 2px solid #fff;
         }
-        
-        
     }
-    &:hover{
+    &:hover {
         background-color: #003b7a;
         border-color: #003b7a;
-        
     }
 }
-
-@media (max-width: 1000px){
-    .choose-us-card{
+@media (max-width:1000px) {
+    .choose-us-card {
         max-width: 80%;
         height: 250px;
         margin: 30px 10px 30px 10px;
     }
-
 }
-
-@media (max-width: 770px){
-    .choose-us-card{
+@media (max-width:770px) {
+    .choose-us-card {
         max-width: 90%;
         height: 300px;
         margin: 30px 10px 30px 10px;
     }
-
 }
-
 //Portfolio cards
-
-.portfolio-card{
+.portfolio-card {
     position: relative;
     width: 350px;
     height: 250px;
     margin: 20px 20px 20px 20px;
     overflow: hidden;
     box-sizing: content-box;
-    &:hover{
-        .card-hover-background{
+    &:hover {
+        .card-hover-background {
             display: block;
         }
-        .portfolio-card-info{
-            @include flex(column, space-around, center);
+        .portfolio-card-info {
+            @include flex(column,space-around,center);
         }
     }
-    .img-portfolio-container{  
+    .img-portfolio-container {
         width: 350px;
         height: 250px;
-        
         transition: 0.3s ease-in-out;
         z-index: 250;
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
-        
-        }
-    .card-hover-background{
+    }
+    .card-hover-background {
         position: absolute;
         top: 0;
         left: 0;
@@ -187,9 +161,7 @@
         transition: 0.3s ease-in-out;
         display: none;
     }
-
-       
-    .portfolio-card-info{        
+    .portfolio-card-info {
         text-align: center;
         width: 350px;
         height: 100px;
@@ -201,26 +173,25 @@
         border-radius: 5px;
         display: none;
         transition: 0.3s ease-in-out;
-        h4{
+        h4 {
             margin: 0;
-        a{
-            font-family: $font-paragraph;
-            font-size: 20px;
-            font-weight: bolder;
-            text-decoration: none;
-            color: white;
-            transition: 0.3s ease-in-out;
-            margin: 0;
-            &:hover{
-                color: #007bff;
+            a {
+                font-family: $font-paragraph;
+                font-size: 20px;
+                font-weight: bolder;
+                text-decoration: none;
+                color: white;
+                transition: 0.3s ease-in-out;
+                margin: 0;
+                &:hover {
+                    color: #007bff;
+                }
             }
         }
-        }
-        p{
+        p {
             font-family: $font-paragraph;
-            font-size: 20px; 
-            margin: 0; 
+            font-size: 20px;
+            margin: 0;
         }
-
     }
 }
