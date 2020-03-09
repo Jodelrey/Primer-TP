@@ -88,6 +88,7 @@
 }
 @media (max-width:1000px) {
     .team {
+        @include flex(column, flex-start, center);
         height: 1000px;
         .team-container {
             width: 80%;
@@ -95,10 +96,9 @@
     }
 }
 @media (max-width:770px) {
-    .team {
-        height: 1600px;
-        margin-top: -120px;
-        .team-container {
+    .team {        
+        height: 1500px;        
+        .team-container {           
             width: 100%;
             .team-header {
                 p {

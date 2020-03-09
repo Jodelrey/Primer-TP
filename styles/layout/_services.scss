@@ -34,9 +34,9 @@
 }
 @media(max-width:770px) {
     .services {
-        padding: 0;
-        height: 2450px;
-        margin: 20px 0 0 0;
+        padding: 30px 0 0 0;
+        height: 2150px;
+        margin: 0;
         .cards-container {
             @include flex(column,center,center);
             max-width: 100%;

@@ -58,7 +58,9 @@
 }
 @media (max-width:770px) {
     .clients {
-        height: 1800px;
+        @include flex(column, flex-start, center);
+        height: 1600px;
+        padding-top: 50px;        
         .clients-header {
             margin-top: 0;
         }

@@ -82,10 +82,9 @@
 }
 @media (max-width:1000px) {
     .contact-us-container {
-        height: 1300px;
-        .contact-us-header h2 {
-            margin-top: -80px;
-        }
+        @include flex(column,flex-start,center);
+        height: 1100px; 
+        padding-top: 50px;       
         .contact-us-info {
             @include flex(column,center,center);
             .map {
@@ -113,9 +112,9 @@
 }
 @media (max-width:770px) {
     .contact-us {
-        height: 1400px;
+        height: 1350px;
         .contact-us-container {
-            margin-top: -150px;
+            @include flex(column, flex-start, center);            
             .contact-us-info {
                 .contact-us-form {
                     .contact-us-details {

@@ -266,33 +266,11 @@ main {
     order: 1;
   }
 }
-@media (max-width: 436px) {
-  .home {
-    width: 100%;
-    padding-top: 100px;
-  }
-  .home .home-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .home .home-container .intro-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .home .home-container .intro-text h2.home-info {
-    line-height: 40px;
-    font-size: 30px;
-  }
-}
 @media (max-width: 770px) {
   .home {
     padding-top: 20px;
     width: 100%;
-    margin: 50px 0 110px 0;
+    margin: 50px 0 0 0;
     height: 600px;
   }
   .home .home-container {
@@ -486,23 +464,18 @@ main {
 }
 @media (max-width: 770px) {
   .about-us {
-    height: 2900px;
-    margin: 20px 0 50px 0;
+    height: 2700px;
     width: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px 0 30px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   .about-us .about-us-info {
-    padding-top: 30px;
     margin-bottom: 200px;
     width: 100%;
-  }
-  .about-us .about-us-info h2 {
-    margin-top: 20px;
   }
   .about-us .about-us-container .about-us-sections .about-us-submenu {
     display: flex;
@@ -585,9 +558,9 @@ main {
 }
 @media (max-width: 770px) {
   .services {
-    padding: 0;
-    height: 2450px;
-    margin: 20px 0 0 0;
+    padding: 30px 0 0 0;
+    height: 2150px;
+    margin: 0;
   }
   .services .cards-container {
     display: flex;
@@ -604,7 +577,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: #1445b3;
-  padding: 60px 0;
+  padding: 60px 0 30px 0;
   width: 100%;
 }
 .choose-us .choose-us-header {
@@ -667,11 +640,11 @@ main {
 
 @media (max-width: 1000px) {
   .choose-us {
-    height: 1800px;
+    height: 1600px;
   }
   .choose-us .choose-us-header {
     width: 90%;
-    margin-top: -100px;
+    margin-top: -80px;
   }
   .choose-us .choose-us-header p {
     margin: 0 0 20px 0;
@@ -701,7 +674,7 @@ main {
   }
 }
 .our-portfolio {
-  padding-top: 50px;
+  padding: 50px 0 50px 0;
   background: #fff;
 }
 .our-portfolio .portfolio-container {
@@ -923,12 +896,11 @@ main {
     width: 100%;
   }
   .testimonials .header-testimonials {
-    margin-top: -20px;
     width: 100%;
   }
   .testimonials .testimonials-container {
-    width: 100%;
-    margin-top: -80px;
+    width: 90%;
+    padding-bottom: 50px;
   }
   .testimonials .testimonials-container .testimonials-cases {
     display: flex;
@@ -1054,6 +1026,10 @@ main {
 
 @media (max-width: 1000px) {
   .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     height: 1000px;
   }
   .team .team-container {
@@ -1062,8 +1038,7 @@ main {
 }
 @media (max-width: 770px) {
   .team {
-    height: 1600px;
-    margin-top: -120px;
+    height: 1500px;
   }
   .team .team-container {
     width: 100%;
@@ -1153,7 +1128,12 @@ main {
 }
 @media (max-width: 770px) {
   .clients {
-    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1600px;
+    padding-top: 50px;
   }
   .clients .clients-header {
     margin-top: 0;
@@ -1294,10 +1274,12 @@ main {
 
 @media (max-width: 1000px) {
   .contact-us-container {
-    height: 1300px;
-  }
-  .contact-us-container .contact-us-header h2 {
-    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1100px;
+    padding-top: 50px;
   }
   .contact-us-container .contact-us-info {
     display: flex;
@@ -1331,10 +1313,13 @@ main {
 }
 @media (max-width: 770px) {
   .contact-us {
-    height: 1400px;
+    height: 1350px;
   }
   .contact-us .contact-us-container {
-    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
   .contact-us .contact-us-container .contact-us-info .contact-us-form .contact-us-details {
     display: flex;
@@ -1513,7 +1498,7 @@ footer .rights-container .copyright p, footer .rights-container .credits p {
 
 @media (max-width: 1100px) {
   footer {
-    height: 1500px;
+    height: 1000px;
     position: relative;
   }
   footer .footer-top {

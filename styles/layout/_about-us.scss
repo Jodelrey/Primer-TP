@@ -124,19 +124,14 @@
 }
 @media(max-width:770px) {
     .about-us {
-        height: 2900px;
-        margin: 20px 0 50px 0;
+        height: 2700px;        
         width: 100%;
-        text-align: center;
-        padding-top: 30px;
-        @include flex(column,center,center);
-        .about-us-info {
-            padding-top: 30px;
+        text-align: center; 
+        padding: 30px 0 30px 0;       
+        @include flex(column,flex-start,center);
+        .about-us-info {            
             margin-bottom: 200px;
-            width: 100%;
-            h2 {
-                margin-top: 20px;
-            }
+            width: 100%;           
         }
         .about-us-container {
             .about-us-sections {

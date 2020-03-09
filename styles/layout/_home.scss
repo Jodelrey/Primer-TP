@@ -60,27 +60,12 @@ main {
         }
     }
 }
-@media (max-width:436px) {
-    .home {
-        width: 100%;
-        padding-top: 100px;
-        .home-container {
-            @include flex(column,center,center);
-            .intro-text {
-                @include flex(column,center,center);
-                h2.home-info {
-                    line-height: 40px;
-                    font-size: 30px;
-                }
-            }
-        }
-    }
-}
+
 @media (max-width:770px) {
     .home {
         padding-top: 20px;
         width: 100%;
-        margin: 50px 0 110px 0;
+        margin: 50px 0 0 0;
         height: 600px;
         .home-container {
             @include flex(column,center,center);

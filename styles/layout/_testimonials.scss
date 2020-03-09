@@ -53,13 +53,12 @@
         @include flex (column,center,center);
         height: 700px;
         width: 100%;
-        .header-testimonials {
-            margin-top: -20px;
+        .header-testimonials {            
             width: 100%;
         }
         .testimonials-container {
-            width: 100%;
-            margin-top: -80px;
+            width: 90%;
+            padding-bottom: 50px;            
             .testimonials-cases {
                 @include flex (column,center,center);
                 width: 100%;
